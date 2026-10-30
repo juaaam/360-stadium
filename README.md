@@ -13,6 +13,14 @@ npm run dev
 
 The development server uses port **5173**. `npm run build` type-checks and creates a static production build in `dist/`. `npm run preview` serves that build on port 4173. Hash-based routing supports static hosting without server rewrite rules.
 
+## Deploy to Netlify
+
+Connect Netlify to `juaaam/360-stadium` and deploy the `main` branch. The included `netlify.toml` sets the build command to `npm run build`, publish directory to `dist`, and Node.js to version 24. Leave the base directory empty (repository root).
+
+For manual drag-and-drop deployment, run `npm ci` and `npm run build`, then upload the **dist folder**, not the source repository or source ZIP. The source `index.html` references TypeScript that a plain static host cannot execute; Vite converts it into browser-ready assets during the build. Hash-based routes need no redirect rule.
+
+If a previous deployment is blank, check that the published `index.html` loads `/assets/…js`, rather than `/src/main.tsx`, then redeploy with these settings.
+
 ## Connected demo
 
 1. Home → **Find your next game**.

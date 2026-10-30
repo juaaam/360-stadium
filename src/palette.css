@@ -1,0 +1,92 @@
+/* Shared brand palette for the mobile edition. Tints derive from these four colors. */
+:root {
+  --brand-yellow: #FFDD15;
+  --brand-turquoise: #35C8B4;
+  --brand-green: #A4CF4A;
+  --brand-paper: #FCFCFB;
+  --brand-ink: #172526;
+  --brand-muted: #4d6257;
+  --brand-mint: color-mix(in srgb, var(--brand-turquoise) 14%, var(--brand-paper));
+  --brand-lime: color-mix(in srgb, var(--brand-green) 18%, var(--brand-paper));
+  --brand-cream: color-mix(in srgb, var(--brand-yellow) 17%, var(--brand-paper));
+  --brand-line: color-mix(in srgb, var(--brand-green) 20%, var(--brand-paper));
+}
+body {
+  background-color: var(--brand-paper);
+  background-image: radial-gradient(ellipse at 5% 15%, #35C8B425, transparent 45%), radial-gradient(ellipse at 95% 65%, #A4CF4A28, transparent 45%);
+}
+.app-v2, .app-v2 .page, .app-v2 .footer { background: var(--brand-paper); }
+.app-v2 .topbar, .app-v2 .bottom-nav { background: #FCFCFBf5; border-color: var(--brand-line); }
+.app-v2 .panel, .app-v2 .event-card, .app-v2 .course-card, .app-v2 .booking-summary { background: var(--brand-paper); border-color: var(--brand-line); }
+.app-v2 .mint, .app-v2 .lavender, .app-v2 .peach { background: var(--brand-mint); }
+.app-v2 .lime { background: var(--brand-lime); }
+.app-v2 .yellow { background: var(--brand-cream); }
+.app-v2 .btn { background: var(--brand-turquoise); color: var(--brand-ink); }
+.app-v2 .btn:not(:disabled):hover { background: var(--brand-green); color: var(--brand-ink); }
+.app-v2 .btn.yellow { background: var(--brand-yellow); color: var(--brand-ink); }
+.app-v2 .btn.dark { background: var(--brand-ink); color: var(--brand-paper); }
+.app-v2 .btn.outline { background: transparent; color: var(--brand-ink); border-color: #7e9a86; }
+.app-v2 .btn.outline:hover { background: var(--brand-mint); }
+.app-v2 .btn.danger { background: var(--brand-cream); color: var(--brand-ink); border-color: #c5ae25; }
+.app-v2 .text-link, .app-v2 .back-link, .app-v2 .card-action { color: #226b58; }
+.app-v2 .bottom-nav .create-nav > span { background: var(--brand-turquoise); color: var(--brand-ink); box-shadow: 0 4px 10px #35C8B430; }
+.app-v2 .bottom-nav a.active > span { background: var(--brand-mint); }
+.app-v2 .sport-tabs > button.active:after { background: var(--brand-turquoise); }
+.app-v2 .progress { background: var(--brand-lime); }
+.app-v2 .progress > span { background: var(--brand-turquoise); }
+.app-v2 .badge.mint, .app-v2 .badge.women, .app-v2 .chip.selected { background: var(--brand-lime); color: #344f26; }
+.app-v2 .badge.yellow { background: var(--brand-yellow); color: var(--brand-ink); }
+.app-v2 .selection-card.selected, .app-v2 .venue-option.selected { background: var(--brand-mint); border-color: #559e89; }
+.app-v2 .steps > div.current > span { background: var(--brand-turquoise); border-color: var(--brand-turquoise); color: var(--brand-ink); }
+.app-v2 .steps > div.done > span { background: var(--brand-lime); color: var(--brand-ink); }
+.app-v2 .seat-grid > button.selected { background: var(--brand-turquoise); color: var(--brand-ink); border-color: var(--brand-turquoise); }
+.app-v2 .toggle-row > input:checked { background: var(--brand-turquoise); }
+.app-v2 .mobile-home-search { background: var(--brand-mint); border-color: var(--brand-mint); }
+.app-v2 .shortcut-orb.gold, .app-v2 .shortcut-orb.coral { background: var(--brand-yellow); color: var(--brand-ink); box-shadow: 0 7px 14px #FFDD1528; }
+.app-v2 .shortcut-orb.green, .app-v2 .shortcut-orb.blue { background: var(--brand-turquoise); color: var(--brand-ink); box-shadow: 0 7px 14px #35C8B428; }
+.app-v2 .shortcut-orb.violet, .app-v2 .shortcut-orb.lime { background: var(--brand-green); color: var(--brand-ink); box-shadow: 0 7px 14px #A4CF4A28; }
+.app-v2 .women-discovery { background: var(--brand-lime); border-color: var(--brand-line); color: var(--brand-ink); }
+.app-v2 .women-discovery > span { background: var(--brand-green); color: var(--brand-ink); }
+.app-v2 .women-discovery small { color: var(--brand-muted); }
+.app-v2 .mobile-coach-promo { background: var(--brand-turquoise); color: var(--brand-ink); }
+.app-v2 .mobile-coach-copy h2 { color: var(--brand-ink); }
+.app-v2 .mobile-coach-copy p { color: #234d43; }
+.app-v2 .mobile-coach-copy > .badge { background: var(--brand-paper); color: var(--brand-ink); }
+.app-v2 .mobile-coach-athlete .athlete-orbit { border-color: #17252630; }
+.app-v2 .mobile-coach-athlete .athlete-scan { background: var(--brand-yellow); }
+.app-v2 .mini-score { background: var(--brand-paper); color: var(--brand-ink); box-shadow: 0 6px 15px #17252616; }
+.app-v2 .moment-card.next { background: var(--brand-lime); border-color: var(--brand-line); }
+.app-v2 .moment-card.points { background: var(--brand-cream); border-color: var(--brand-line); }
+.app-v2 .moment-card h3, .app-v2 .moment-card .moment-points, .app-v2 .moment-card > small, .app-v2 .moment-card.points > small, .app-v2 .moment-link, .app-v2 .moment-card.points .moment-link { color: var(--brand-ink); }
+.app-v2 .moment-icon { background: var(--brand-paper); color: #496322; }
+.app-v2 .moment-card.points .moment-icon { background: var(--brand-yellow); color: var(--brand-ink); }
+.app-v2 .moment-card p, .app-v2 .moment-card.points p { color: var(--brand-muted); }
+.app-v2 .moment-card .progress { background: #A4CF4A40; }
+.app-v2 .moment-card .progress > span { background: #52742b; }
+.app-v2 .course-cover.mint, .app-v2 .course-cover.lavender, .app-v2 .course-cover.peach { background: var(--brand-mint); color: #226f60; }
+.app-v2 .course-cover.lime { background: var(--brand-lime); color: #48651b; }
+.app-v2 .course-cover .badge { background: var(--brand-paper); color: var(--brand-ink); }
+.app-v2 .course-detail-hero.mint, .app-v2 .course-detail-hero.lavender, .app-v2 .course-detail-hero.peach, .app-v2 .lesson-player.lavender { background: var(--brand-mint); }
+.app-v2 .course-detail-hero.lime, .app-v2 .lesson-player.lime { background: var(--brand-lime); }
+.app-v2 .course-detail-hero > svg, .app-v2 .lesson-ball { color: #387a62; }
+.app-v2 .academy-hero { background: var(--brand-lime); border-color: var(--brand-line); }
+.app-v2 .large-ball { background: linear-gradient(140deg, var(--brand-yellow), var(--brand-green), var(--brand-turquoise)); color: var(--brand-paper); }
+.app-v2 .camp-banner, .app-v2 .earned-achievement, .app-v2 .achievement { background: var(--brand-cream); border-color: var(--brand-line); }
+.app-v2 .athlete-panel { background: radial-gradient(ellipse at 50% 40%, var(--brand-paper), var(--brand-mint)); border-color: var(--brand-line); }
+.app-v2 .athlete-label > span, .app-v2 .athlete-status, .app-v2 .athlete-panel .rail-card-header > span:first-child, .app-v2 .athlete-panel .badge, .app-v2 .body-marker { color: #345b49; }
+.app-v2 .athlete-status { border-color: #A4CF4A60; }
+.app-v2 .overall-card, .app-v2 .recommended-course, .app-v2 .practice-box, .app-v2 .membership-card.featured { background: var(--brand-lime); border-color: var(--brand-line); }
+.app-v2 .activity-icon.lavender { background: var(--brand-mint); color: #216e60; }
+.app-v2 .profile-hero { background: var(--brand-mint); border-color: var(--brand-line); }
+.app-v2 .profile-avatar, .app-v2 .header-avatar { background: linear-gradient(135deg, var(--brand-green), var(--brand-turquoise)); color: var(--brand-ink); }
+.app-v2 .reward-card.mint, .app-v2 .reward-card.lavender { background: var(--brand-mint); }
+.app-v2 .reward-card.yellow { background: var(--brand-cream); }
+.app-v2 .reward-card.lavender > svg, .app-v2 .reward-card.yellow > svg { color: #4d6328; }
+.app-v2 .rewards-hero { background: var(--brand-yellow); color: var(--brand-ink); }
+.app-v2 .rewards-hero p, .app-v2 .rewards-hero small, .app-v2 .rewards-hero .eyebrow { color: #4e511e; }
+.app-v2 .rewards-hero .progress { background: #17252618; }
+.app-v2 .rewards-hero .progress > span { background: #416323; }
+.app-v2 .reward-art, .app-v2 .reward-balance > svg { color: var(--brand-ink); }
+.app-v2 .info-banner, .app-v2 .notification-card.unread { background: var(--brand-lime); }
+@media(max-width:480px) { body { background: var(--brand-paper); } }
+.app-v2 .summary-line > span { color: var(--brand-muted); }

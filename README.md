@@ -4,9 +4,9 @@ An English-only, responsive sports-platform prototype for investor demonstration
 
 ## Version 2 layout
 
-This branch preserves the original booking, organizer, Academy, AI Coach, rewards, profile, and notification features while presenting them in a touch-first app layout inspired by the supplied references. It uses a centered application canvas on desktop and a full-width phone layout, six colorful circular shortcuts, swipeable cards, lavender training panels, and persistent bottom navigation. `src/pages/MobileHome.tsx` defines the new home screen; `src/mobile-app.css` styles this edition. The original version remains on `main` and `netlify-download`.
+This branch preserves the original booking, organizer, Academy, AI Coach, rewards, profile, and notification features while presenting them in a touch-first app layout inspired by the supplied references. It uses a centered application canvas on desktop and a full-width phone layout, six colorful circular shortcuts, swipeable cards, brand-colored training panels, and persistent bottom navigation. `src/pages/MobileHome.tsx` defines the new home screen; `src/mobile-app.css` styles this edition. The original version remains on `main` and `netlify-download`.
 
-To compare live versions, deploy this branch (`mobile-app-layout`) in a separate Netlify project, or upload `downloads/360-stadium-mobile-v2-netlify.zip` to a new Netlify site. The ZIP contains compiled production files with `index.html` at its root.
+To compare live versions, deploy this branch (`mobile-app-layout`) in a separate Netlify project, or upload `downloads/360-stadium-mobile-v2-brand-palette-netlify.zip` to a new Netlify site. The ZIP contains compiled production files with `index.html` at its root.
 
 ## Run
 
@@ -73,3 +73,7 @@ Playwright runs desktop Chromium and an emulated iPhone viewport. The cloud envi
 Tests cover the complete investor journey, persistence, inventory and point reversal, reward credits, organizer actions, private video preview, sport-specific results, custom banners, official/venue/school scenarios, and layout checks across the screens.
 
 `node scripts/generate-samples.mjs` regenerates the six original illustrated WebM clips. It needs the development server, Chromium, and FFmpeg; normal development uses the checked-in clips and does not require FFmpeg.
+
+## Brand colors
+
+The mobile edition uses yellow `#FFDD15`, turquoise `#35C8B4`, green `#A4CF4A`, and off-white `#FCFCFB`. Shared tokens and component color overrides are in `src/palette.css`; pale surfaces derive from these colors. Dark neutral text preserves readability.

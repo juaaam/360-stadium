@@ -1,6 +1,12 @@
-# 360 Stadium
+# 360 Stadium — Mobile Edition (Version 2)
 
 An English-only, responsive sports-platform prototype for investor demonstrations. Built with React, TypeScript, Vite, Lucide icons, and locally served fonts and assets.
+
+## Version 2 layout
+
+This branch preserves the original booking, organizer, Academy, AI Coach, rewards, profile, and notification features while presenting them in a touch-first app layout inspired by the supplied references. It uses a centered application canvas on desktop and a full-width phone layout, six colorful circular shortcuts, swipeable cards, lavender training panels, and persistent bottom navigation. `src/pages/MobileHome.tsx` defines the new home screen; `src/mobile-app.css` styles this edition. The original version remains on `main` and `netlify-download`.
+
+To compare live versions, deploy this branch (`mobile-app-layout`) in a separate Netlify project, or upload `downloads/360-stadium-mobile-v2-netlify.zip` to a new Netlify site. The ZIP contains compiled production files with `index.html` at its root.
 
 ## Run
 

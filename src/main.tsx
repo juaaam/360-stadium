@@ -11,4 +11,5 @@ import '@fontsource/manrope/latin-800.css';
 import { DemoProvider } from './store';
 import App from './App';
 import './styles.css';
+import './mobile-app.css';
 ReactDOM.createRoot(document.getElementById('root')!).render(<React.StrictMode><DemoProvider><App/></DemoProvider></React.StrictMode>);
